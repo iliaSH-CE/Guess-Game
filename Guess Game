@@ -1,0 +1,18 @@
+import random
+
+computer=random.randint(1,100)
+
+while True:
+    try:
+        guess=int(input("enter a number between 1 to 100\n"))
+        if guess==computer:
+            print("Ahsant")
+            break
+        elif guess>computer:
+            print("come down")
+        elif guess<computer:
+            print("come up")
+        else:
+            print("enter a number between 1 to 100! ")
+    except:
+        print("enter a number!")
